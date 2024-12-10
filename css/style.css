@@ -1,0 +1,358 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: top;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Preconnect", sans-serif;
+  color: #212121;
+  letter-spacing: 0.9px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* @media (max-width: 1200px) {
+  [class*"container"] {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1100px) {
+  [class*"container"] {
+    max-width: 900px;
+  }
+}
+
+@media (max-width: 960px) {
+  [class*"container"] {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 800px) {
+  [class*"container"] {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 700px) {
+  [class*"container"] {
+    max-width: 500px;
+  }
+} */
+
+.header {
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 45px;
+}
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
+
+  font-size: 18px;
+}
+.header-list-item {
+  cursor: pointer;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.header-info-img {
+  max-width: 40%;
+  height: auto;
+  margin-right: 50px;
+}
+
+.header-info-desc {
+  max-width: 50%;
+  text-align: left;
+}
+
+.header-info-desc-name {
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.header-info-desc-text {
+  margin-top: 15px;
+  line-height: 1.6;
+  margin-top: 50px;
+  color: #727272;
+}
+
+.header-info-desc-button {
+  display: inline-block;
+  margin-top: 50px;
+  padding: 20px 40px;
+  background-color: #34547a;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.section-about-me {
+  margin-top: 8%;
+  text-align: center;
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 4%;
+}
+
+.section-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #808080;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section2 {
+  width: 100%;
+  height: 200px;
+  background: #34547a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.section2-info {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 60px;
+}
+
+.section2-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2-svg {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0;
+}
+
+.section2-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-left: 16px;
+}
+
+.skills-layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1150px;
+  margin: 0 auto;
+  margin-top: 12%;
+}
+
+.skills-container {
+  flex: 1;
+  max-width: 600px;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 450px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  background: #e0e0e0;
+  height: 6px;
+  width: 100%;
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: #3b5998;
+  border-radius: 3px;
+}
+
+.my-progress {
+  margin-bottom: 28px;
+  font-size: 36px;
+  font-weight: 600;
+}
