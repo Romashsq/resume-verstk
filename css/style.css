@@ -356,3 +356,19 @@ body {
   font-size: 36px;
   font-weight: 600;
 }
+
+.work {
+}
+.work-name {
+  font-weight: 600;
+  font-size: 30px;
+  margin-top: 45px;
+  text-align: center;
+}
+.work-desc {
+  color: #808080;
+  font-size: 40;
+  text-align: center;
+  margin-top: 35px;
+  line-height: 1.3;
+}
